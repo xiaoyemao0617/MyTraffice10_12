@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String upass = etMainPassword.getText().toString();
                 if(uname.trim().equals("")||upass.trim().equals("")){
                     Toast.makeText(MainActivity.this,"输入内容不能为空！",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,"输入内容不能为空！",Toast.LENGTH_LONG).show();
                     return;
                 }
                 Boolean isCheck = checkMain1.isChecked();
