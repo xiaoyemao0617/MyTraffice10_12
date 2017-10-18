@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private CheckBox checkMain2;
     private Button btnMainEnter;
     private Button btnMainSign;
-    String admin;
+//    String admin;
     String urlhttp,urlport;
     urlBeanHttp beanHttp;
     SharedPreferences DBprefer;
