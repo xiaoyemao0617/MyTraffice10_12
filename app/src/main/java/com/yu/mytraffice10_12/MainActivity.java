@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import com.yu.mytraffice10_12.common.urlBeanHttp;
 import com.yu.mytraffice10_12.common.utilSetGet;
 
@@ -25,7 +26,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String urlhttp,urlport;
     urlBeanHttp beanHttp;
     SharedPreferences DBprefer;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
