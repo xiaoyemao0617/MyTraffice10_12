@@ -9,7 +9,8 @@ import android.content.SharedPreferences;
 
 public class  utilSetGet {
     static urlBeanHttp http;
-    static String urlhttp,urlport;
+    static String urlhttp="http";
+    static String urlport="port";
     static String username,userpass;
     public static void saveSettig(Context context,String http,String port){
         SharedPreferences preferences = context.getSharedPreferences("http",Context.MODE_PRIVATE);
@@ -24,18 +25,6 @@ public class  utilSetGet {
         http.setUrlHttp(preferences.getString(urlhttp,""));
         http.setUrlPort(preferences.getString(urlport,""));
         return http;
-    }
-    public static void saveEnter(Context context,String name,String pass){
-        SharedPreferences preferences = context.getSharedPreferences("main",Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putString(username,name);
-        editor.putString(userpass,pass);
-        editor.commit();
-    }
-    private static void loadEnter(Context context){
-        SharedPreferences preferences = context.getSharedPreferences("main",Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-
     }
 
 }

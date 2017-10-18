@@ -46,26 +46,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_main_enter:
-                String uname = etMainName.getText().toString();
-                String upass = etMainPassword.getText().toString();
-                if(uname.trim().equals("")||upass.trim().equals("")){
-                    Toast.makeText(MainActivity.this,"输入内容不能为空！",Toast.LENGTH_LONG).show();
-                    return;
-                }
-                Boolean isCheck = checkMain1.isChecked();
-                if (isCheck){
-                    DBprefer = this.getSharedPreferences("main",MODE_PRIVATE);
-                    SharedPreferences.Editor editor = DBprefer.edit();
-                    editor.putString("name",uname);
-                    editor.putString("pass",upass);
-                    editor.commit();
-                }else {
-                    DBprefer = this.getSharedPreferences("main",MODE_PRIVATE);
-                    SharedPreferences.Editor editor = DBprefer.edit();
-                    editor.putString("name",null);
-                    editor.putString("pass",null);
-                    editor.commit();
-                }
                 Intent intent = new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(intent);
                 break;

@@ -12,6 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.yu.mytraffice10_12.R;
+import com.yu.mytraffice10_12.common.MyButtonClick;
+import com.yu.mytraffice10_12.common.MyCheckLister;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -23,9 +25,10 @@ import java.util.Map;
 public class MyBaseAdpter extends BaseAdapter {
     LayoutInflater minflater;
     ArrayList<Map<String,Object>> arrayList;
-
+    MyButtonClick btnClick;
+    MyCheckLister checkLis;
     int yue_biaozhun=0;
-    public MyBaseAdpter(Context context,ArrayList<Map<String,Object>> arrayList,int shu) {
+    public MyBaseAdpter(Context context, ArrayList<Map<String,Object>> arrayList,int shu) {
         this.arrayList = arrayList;
         minflater = LayoutInflater.from(context);
         yue_biaozhun = shu;

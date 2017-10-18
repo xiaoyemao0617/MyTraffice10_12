@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <com.yu.mytraffice10_12.common.MyTextView
+            android:id="@+id/list1_1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text=""/>
+        <com.yu.mytraffice10_12.common.MyTextView
+            android:id="@+id/list1_2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/list1_1"
+            android:text=""/>
+        <com.yu.mytraffice10_12.common.MyTextView
+            android:id="@+id/list1_3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/list1_2"
+            android:text=""/>
+        <com.yu.mytraffice10_12.common.MyTextView
+            android:id="@+id/list1_4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/list1_3"
+            android:text=""/>
+        <com.yu.mytraffice10_12.common.MyTextView
+            android:id="@+id/list1_5"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/list1_4"
+            android:text=""/>
+        <com.yu.mytraffice10_12.common.MyTextView
+            android:id="@+id/list1_6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/list1_5"
+            android:text=""/>
+        <CheckBox
+            android:id="@+id/check_frag3_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/list1_4"/>
+        <Button
+            android:id="@+id/btn_frag3_1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/list1_5"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
