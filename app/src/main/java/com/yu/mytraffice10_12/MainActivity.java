@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnMainEnter;
     private Button btnMainSign;
 //    String admin;
+    String asdasd;
     String urlhttp,urlport;
     urlBeanHttp beanHttp;
     SharedPreferences DBprefer;
