@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     public void wifiDialog(){
         final Dialog dialog = new Dialog(this);
-        dialog.setTitle("Setting");
+        dialog.setTitle("Settidddng");
         dialog.getWindow().setContentView(R.layout.wifidialog);
         final EditText etSettingIP = (EditText) dialog.getWindow().findViewById(R.id.et_setting_IP);
         final EditText etSettingPort = (EditText) dialog.getWindow().findViewById(R.id.et_setting_port);
